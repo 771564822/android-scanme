@@ -1,6 +1,12 @@
 package com.bbw.scanme.pojo;
 
 public class FileBean {
+	public FileBean(String name, String type, String url) {
+		this.name = name;
+		this.type = type;
+		this.url = url;
+	}
+
 	/**
 	 * 下载文件名
 	 */
