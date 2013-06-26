@@ -191,8 +191,8 @@ public class CaptureActivity extends Activity implements Callback {
 		/**
 		 * ÏÔÊ¾½âÂë×Ö·û´®
 		 */
-		String result = obj.getBarcodeFormat().toString() + ":" + obj.getText();
-		txtResult.setText(result);
+		/*String result = obj.getBarcodeFormat().toString() + ":" + obj.getText();
+		txtResult.setText(result);*/
 
 		/*
 		 * MainActivity.RESULT_MESSAGE = obj.getBarcodeFormat().toString() + ":"
@@ -200,7 +200,7 @@ public class CaptureActivity extends Activity implements Callback {
 		 */
 		
 		Intent intent = new Intent(CaptureActivity.this, DownloadActivity.class);
-		intent.putExtra("result", result);
+		intent.putExtra("result", obj.getText());
 		this.startActivityForResult(intent,1);
 //		this.finish();
 	}
