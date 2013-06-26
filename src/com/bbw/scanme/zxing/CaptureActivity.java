@@ -198,9 +198,10 @@ public class CaptureActivity extends Activity implements Callback {
 		 * MainActivity.RESULT_MESSAGE = obj.getBarcodeFormat().toString() + ":"
 		 * + obj.getText(); MainActivity.RESULT_BITMAP = barcode;
 		 */
-
+		
 		Intent intent = new Intent(CaptureActivity.this, DownloadActivity.class);
-		this.startActivity(intent);
+		intent.putExtra("result", result);
+		this.startActivityForResult(intent,1);
 //		this.finish();
 	}
 
