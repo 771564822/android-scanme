@@ -33,7 +33,6 @@ public class DownloadActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
 			}};
 		layout.setOnClickListener( event);
 	}
